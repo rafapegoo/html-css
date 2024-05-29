@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabela de Vendas</title>
+<style>
+  /* Estilos para deixar a tabela mais parecida com o Excel */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  div#container{
+    overflow-x: auto;
+  }
+</style>
+</head>
+<body>
+
+<h2>Tabela de Vendas</h2>
+
+<div id="container">
+  <table>
+    <tr>
+      <th>Mês</th>
+      <th>Produto</th>
+      <th>Número de Produtos Vendidos</th>
+    </tr>
+    <tr>
+      <td>Jan</td>
+      <td>Sabonete</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Jan</td>
+      <td>Xampu</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <td>Fev</td>
+      <td>Sabonete</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>Fev</td>
+      <td>Xampu</td>
+      <td>160</td>
+    </tr>
+    <tr>
+      <td>Mar</td>
+      <td>Sabonete</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>Mar</td>
+      <td>Xampu</td>
+      <td>180</td>
+    </tr>
+    <!-- Adicione mais linhas conforme necessário -->
+  </table>
+</div>
+
+</body>
+</html>
