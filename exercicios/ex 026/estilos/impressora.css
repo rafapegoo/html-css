@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+menu{
+    display: none;
+}
+
+header{
+    background-color: lightgray;
+}
+
+article::after {
+    content:"Esse artigo foi impresso atraves do site www.noticia.com.br ";
+}

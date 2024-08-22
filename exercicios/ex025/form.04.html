@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php">
+
+         <!-- Grupo de campos relacionados ao gênero -->
+        <fieldset>
+             <!-- Legenda para identificar o grupo de opções de gênero -->
+            <legend>Gênero</legend>
+            <!-- Opção de gênero Masculino com botão de rádio -->
+            <input type="radio" name="genero" id="genmasc" value="m"> <label for="genmasc">Masculino</label>
+            <input type="radio" name="genero" id="genfem" value="f"> <label for="genfem">Feminino</label>
+        </fieldset>
+
+         <!-- Grupo de campos relacionados a esportes favoritos -->
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+               <!-- Opção de esporte Futebol com caixa de seleção (checkbox) -->
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label>  <br>
+            <input type="checkbox" name="eshand" id="ieshand"><label for="ieshand">Handebol</label> <br>
+            <input type="checkbox" name="esbasq" id="iesbasq"><label for="iesbasq">Basquete</label> <br>
+
+        </fieldset>
+        <p>
+       <input type="submit" value="Enviar">
+       <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html> 

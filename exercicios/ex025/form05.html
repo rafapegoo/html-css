@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ <!-- Ao utilizar o input do tipo "file" para upload de arquivos, é obrigatório usar o método "POST" no formulário. 
+Isso ocorre porque o método "GET" não suporta o envio de dados binários (como arquivos), 
+enquanto o "POST" permite o envio seguro de arquivos através do corpo da requisição.-->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!-- Rótulo para o campo de seleção de cor -->
+        <p>
+            <label for="icor"> cor:</label>
+              <!-- Campo de seleção de cor, com valor padrão definido para verde (#00ff00) -->
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+
+        <!-- Seção de nível de satisfação -->
+        <p>
+             <!-- Rótulo para o campo de controle de nível (slider) -->
+            <label for="inivel">Nivel de satisfação</label>
+             <!-- Campo de controle deslizante (range) com valores mínimos de 1 e máximos de 5 -->
+            <input type="range" name="Nivel" id="inivel" min="1" max="5">
+        </p>
+
+         <!-- Seção para upload de foto -->
+        <p>
+            <!-- Rótulo para o campo de upload de arquivo -->
+            <label for="ifoto">foto</label>
+            <!-- Campo para seleção de arquivo (upload de foto) -->
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+         <!-- Botões para enviar o formulário ou limpar os campos -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
